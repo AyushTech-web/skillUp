@@ -39,8 +39,8 @@ export const createCheckoutSession = async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: `http://localhost:5173/course-detail/${courseId}?success=true`, // Redirect back to course detail with success parameter
-      cancel_url: `http://localhost:5173/course-detail/${courseId}`,
+      success_url: `https://skillup-trij.onrender.com/course-detail/${courseId}?success=true`, // Redirect back to course detail with success parameter
+      cancel_url: `https://skillup-trij.onrender.com/course-detail/${courseId}`,
       metadata: {
         courseId: courseId,
         userId: userId,
